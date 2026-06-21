@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D Calculator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="stage">
+  <div class="calculator">
+    <div class="plate">
+      <span class="brand"><strong>Ranjith</strong> · Series I</span>
+      <span class="led" id="led"></span>
+    </div>
+
+    <div class="screen">
+      <div class="history" id="history"></div>
+      <div class="result" id="result">0</div>
+    </div>
+
+    <div class="keypad">
+      <button class="key key--fn" data-action="clear" data-key="Escape">AC</button>
+      <button class="key key--fn" data-action="sign" data-key="s">+/−</button>
+      <button class="key key--fn" data-action="percent" data-key="%">%</button>
+      <button class="key key--op" data-action="operator" data-value="/" data-key="/">÷</button>
+
+      <button class="key" data-action="digit" data-value="7" data-key="7">7</button>
+      <button class="key" data-action="digit" data-value="8" data-key="8">8</button>
+      <button class="key" data-action="digit" data-value="9" data-key="9">9</button>
+      <button class="key key--op" data-action="operator" data-value="*" data-key="*">×</button>
+
+      <button class="key" data-action="digit" data-value="4" data-key="4">4</button>
+      <button class="key" data-action="digit" data-value="5" data-key="5">5</button>
+      <button class="key" data-action="digit" data-value="6" data-key="6">6</button>
+      <button class="key key--op" data-action="operator" data-value="-" data-key="-">−</button>
+
+      <button class="key" data-action="digit" data-value="1" data-key="1">1</button>
+      <button class="key" data-action="digit" data-value="2" data-key="2">2</button>
+      <button class="key" data-action="digit" data-value="3" data-key="3">3</button>
+      <button class="key key--op" data-action="operator" data-value="+" data-key="+">+</button>
+
+      <button class="key key--zero" data-action="digit" data-value="0" data-key="0">0</button>
+      <button class="key" data-action="decimal" data-key=".">.</button>
+      <button class="key key--eq" data-action="equals" data-key="Enter">=</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
